@@ -1,0 +1,13 @@
+# Configuration for BPIP Core
+#
+# This file can be placed at the root of the project or in a /config directory.
+# BPIP Core also reads environment variables, prefixed with "BPIP_".
+# For example, to override the log level, you can set:
+# export BPIP_LOG_LEVEL=debug
+
+# LogLevel specifies the logging level.
+# Options: "debug", "info", "warn", "error"
+log_level: "info"
+
+# LedgerDBPath is the file system path where the ledger database will be stored.
+ledger_db_path: "./data/ledger"

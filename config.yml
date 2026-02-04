@@ -1,0 +1,10 @@
+# BPIP Core Configuration
+
+# Log level (debug, info, warn, error)
+log_level: "info"
+
+# Path to the ledger database
+ledger_db_path: "./data/ledger"
+
+# Port for the HTTP API server
+api_port: "8080"
