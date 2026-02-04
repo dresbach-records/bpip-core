@@ -1,0 +1,24 @@
+name: Enforce Changelog Update
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  changelog:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check if CHANGELOG.md was modified
+        run: |
+          git fetch origin ${{ github.base_ref }}
+          if git diff --name-only origin/${{ github.base_ref }}...HEAD | grep -q "CHANGELOG.md"; then
+            echo "CHANGELOG.md updated ✅"
+          else
+            echo "❌ CHANGELOG.md was not updated."
+            echo "Please document your changes in CHANGELOG.md under [Unreleased]."
+            exit 1
+          fi
