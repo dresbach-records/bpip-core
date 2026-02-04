@@ -100,7 +100,7 @@ Responsibilities:
 
 Key rule:
 > Backend systems **never calculate rewards directly**.  
-They emit events. BPIP Core decides.
+> They emit events. BPIP Core decides.
 
 ---
 
