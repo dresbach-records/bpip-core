@@ -1,0 +1,1 @@
+# bpip-core initgit add README.mdgit commit -m first commitgit branch -M maingit remote add origin https://github.com/dresbach-records/bpip-core.gitgit push -u origin main
