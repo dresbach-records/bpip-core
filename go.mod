@@ -2,8 +2,6 @@ module bpip-core
 
 go 1.24
 
-toolchain go1.24.12
-
 require (
 	cloud.google.com/go v0.116.0 // indirect
 	cloud.google.com/go/auth v0.9.3 // indirect
