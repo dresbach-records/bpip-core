@@ -1,0 +1,5 @@
+# Local configuration file
+config.yaml
+
+# Data directory for the ledger
+/data
